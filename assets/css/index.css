@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#e50203;
+}
+
+ .root {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 70px 1fr 70px;
+}
+.site-header {
+    grid-column: 1 / 4;
+    grid-row:   1;
+    background: whitesmoke;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    margin: 0 .5rem;
+}
+
+nav a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.heroImg {
+    background: rgba(0, 0, 0, .4);
+    grid-column: 1 / 4;
+    grid-row: 2;
+    padding: .5rem;
+    margin: 0 .5rem;
+    position: relative;
+}
+
+.heroTxt {
+    font-family: 'Dancing Script';
+    position: absolute;
+    top: 10%;
+    font-size: 3.765rem;
+    color: #e50203;
+    margin: .5rem;
+    left: 5%;
+}
+
+.footer {
+    grid-column:  1 / 4;
+    grid-row: 3;
+    width: 100%;
+    background: whitesmoke;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
